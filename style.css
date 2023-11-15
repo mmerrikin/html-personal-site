@@ -1,0 +1,180 @@
+
+html {
+    font-size: 16px;
+}
+body {
+    margin: 0px;
+}
+#mynav {
+    display: flex;
+    height: 40px;
+    background-color:steelblue;
+    padding-left: 6.25rem;
+    position: fixed;
+    width: 100%;
+}
+#mynav ul{
+    list-style-type: none;
+    padding: 0px;
+    margin:0px;
+}
+#mynav li {
+    display: inline;
+}
+#mynav li a {
+    display:inline-block;
+    text-align: center;
+    padding: 0.88rem 1rem;
+    color: black;
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+#about-me {
+    margin-left: 0.9rem;
+    padding-top: 6.25rem;
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+}
+.grid-container-top {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-left: 50px;
+    padding-bottom: 2rem;
+}
+.grid-container-work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 50px;
+    padding-bottom: 2rem;
+}
+.grid-container-hobbies {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 50px;
+    padding-bottom: 2rem;
+}
+.grid-container-contact {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+.first-card {
+    display: flex;
+}
+#profile_picture {
+    padding-top: 50px;
+    padding-left: 20px;
+    border-radius: 50%;
+    display: inline;
+}
+.header {
+    display: block;
+    font-size: 3rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.lead {
+    display: inline-flex;
+    font-size: 1.1rem;
+    padding-right: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.list {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#wholesale {
+    display: inline;
+    padding-top: 100px;
+    width: 35rem;
+}
+#hobbies-pic {
+    display: inline;
+    width: 35rem;
+    height: 35rem;
+    padding-top: 6.25rem;
+    padding-right: 6rem;
+}
+#contact-me {
+    grid-column: span 2;
+}
+.link {
+    display: flex;
+    justify-content: center;
+}
+.grid-container-bottom {
+    display: grid;
+    grid-column: span 2;
+    grid-template-rows: 1fr;
+    height: 10rem;
+    padding-top: 1rem;
+}
+footer {
+    display: flex;
+    background-color: steelblue;
+    grid-column: span 2;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 900px){
+    #mynav li a{
+        font-size: 1rem;
+    }
+    .header{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .grid-container-top{
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+        text-align: justify;
+        padding-left: 0;
+    }
+    .grid-container-work {
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+        text-align: justify;
+        padding-left: 0;
+    }
+    .grid-container-hobbies {
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+        text-align: justify;
+        padding-left: 0;
+    }
+    .grid-container-bottom {
+        width: 100%;
+    }
+    #profile_picture{
+        margin-bottom: 10px;
+        object-fit: cover;
+        display: inline;
+        width: 50%;
+        margin-left: 10%;
+    }
+    #wholesale{
+        margin-bottom: 10px;
+        width: 100%;
+        object-fit: cover;
+        display: inline;
+    }
+    #hobbies-pic{
+        margin-bottom: 10px;
+        width: 100%;
+        object-fit: cover;
+        display: inline;
+    }
+}
+@media (max-width: 810px){
+    #mynav li a{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 720px){
+    #mynav li a{
+        display: none;
+    }
+}
